@@ -1,29 +1,28 @@
-#datatypes & expressions in Python
-'''Data types in Python:
-1.Numeric Data Types:
-   a.Integer (int): Whole numbers, e.g., 10, -5, 0
-   b.Float (float): Decimal numbers, e.g., 3.14, -0.001
-   c.Complex (complex): Complex numbers, e.g., 2 + 3j
-2.Sequence Data Types:
-   a.String (str): Text data, e.g., "Hello, World!"
-   b.List (list): Ordered collection of items, e.g., [1, 2, 3, "apple"]
-   c.Tuple (tuple): Immutable ordered collection of items, e.g., (1, 2, 3)
-    d.Range (range): Sequence of numbers, e.g., range(0, 10)
-3.Mapping Data Type:
+<h1>datatypes & expressions in Python</h1>
+<h2>Data types in Python:</h2>
+<h3>1.Numeric Data Types:</h3>
+   a.Integer (int): Whole numbers, e.g., 10, -5, 0 <br>
+   b.Float (float): Decimal numbers, e.g., 3.14, -0.001 <br>
+   c.Complex (complex): Complex numbers, e.g., 2 + 3j <br>
+<h3>2.Sequence Data Types:</h3>
+   a.String (str): Text data, e.g., "Hello, World!" <br>
+   b.List (list): Ordered collection of items, e.g., [1, 2, 3, "apple"] <br>
+   c.Tuple (tuple): Immutable ordered collection of items, e.g., (1, 2, 3) <br>
+    d.Range (range): Sequence of numbers, e.g., range(0, 10) <br>
+<h3>3.Mapping Data Type:</h3>
    a.Dictionary (dict): Key-value pairs, e.g., {"name": "John", "age": 30}
-4.Set Data Types:
-    a.Set (set): Unordered collection of unique items, e.g., {1, 2, 3}
-    b.Frozenset (frozenset): Immutable version of a set, e.g., frozenset([1, 2, 3])
-5.Boolean Data Type:
+<h3>4.Set Data Types:</h3>
+    a.Set (set): Unordered collection of unique items, e.g., {1, 2, 3}<br>
+    b.Frozenset (frozenset): Immutable version of a set, e.g., frozenset([1, 2, 3])<br>
+<h3>5.Boolean Data Type:<h3>
    a.Boolean (bool): Represents True or False values
-6.Binary Data Types:
-   a.Bytes (bytes): Immutable sequence of bytes, e.g., b"Hello"
-    b.Bytearray (bytearray): Mutable sequence of bytes, e.g., bytearray(b"Hello")
-    c.Memoryview (memoryview): View of binary data, e.g., memoryview(b"Hello")
-7.bitwise Data Type:
-    a.Bitwise (bit): Represents binary digits (0 and 1)
-    bytes and Bytearray can also be used for bitwise operations.
-'''
+<h3>6.Binary Data Types:</h3>
+   a.Bytes (bytes): Immutable sequence of bytes, e.g., b"Hello" <br>
+    b.Bytearray (bytearray): Mutable sequence of bytes, e.g., bytearray(b"Hello")<br>
+    c.Memoryview (memoryview): View of binary data, e.g., memoryview(b"Hello")<br>
+<h3>7.bitwise Data Type:</h3>
+    a.Bitwise (bit): Represents binary digits (0 and 1)<br>
+    bytes and Bytearray can also be used for bitwise operations.<br>
 
 # Expressions in Python:
 '''An expression is a combination of values, variables, operators, and function calls that can be evaluated
