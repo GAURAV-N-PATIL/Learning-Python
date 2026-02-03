@@ -1,6 +1,5 @@
 # Mini project : student marks calculator
-
-
+# Function to calculate Grade and Percentage
 def grade():
     total_marks=Marks_Maths_2 + Marks_Statistics_1 + Marks_Python + Marks_English_2
     average_marks=total_marks / 4
