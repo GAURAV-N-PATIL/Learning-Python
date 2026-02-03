@@ -1,7 +1,26 @@
-#First code
-print("Hello, World!")
+````md
+# 🐍 First Python Code
 
-'''Reserved Words in Python or Keywords in Python
+```python
+print("Hello, World!")
+````
+
+---
+
+## 🔑 Reserved Words in Python (Keywords)
+
+Python has some **reserved words** called **keywords**.
+
+⚠️ You cannot use these keywords as:
+
+* Variable names
+* Function names
+* Class names
+* Any other identifiers
+
+### ✅ List of Python Keywords
+
+```
 False      await      else       import     pass
 None       break      except     in         raise
 True       class      finally    is         return
@@ -9,87 +28,230 @@ and        continue   for        lambda     try
 as         def        from       nonlocal   while
 assert     del        global     not        with
 async      elif       if         or         yield
-You cannot use these keywords as variable names, function names, or any other identifiers.
-'''
+```
 
-Python is high-level language but to order CPU which is low-level language we need to convert
-high-level language to low-level language. This process is done by Interpreter or Compiler.
+---
 
-In Python, we use Interpreter.
+## ⚙️ Interpreter and Compiler
 
-Interpreter is done line by line. It means it converts one line of code to low-level language
-and then executes it. After that, it converts the next line of code to low-level language and executes it.
-This process continues until all lines of code are executed. it is done in terminal or command prompt.
+Python is a **high-level language**, but the CPU understands only **low-level machine language**.
 
-Compiler converts the whole code to low-level language at once and then executes it.
+So, Python code must be converted into low-level instructions.
 
-for compiler we need to save complete code in a file with .c, .cpp, .java extension etc.(here .py
-is used for python files) and then we need to run that file in terminal or command prompt.
+This conversion is done by:
 
-compiler like vs code, pycharm, jupiter etc are used for this purpose.
+* **Interpreter**
+* **Compiler**
 
-#Errors types in Python:
+---
 
-1.Syntax Error: It occurs when the code is not written in proper format.
-Example: print("Hello World") #Correct Syntax
-         print("Hello World' #Incorrect Syntax - Missing closing quotation mark
+## 🟢 Interpreter in Python
 
-2.Logical Error: It occurs when the code is syntactically correct but produces incorrect results.
-Example: a = 'hello'
-         b = 10
-         c = a + b  #Logical Error: Should be string + integer makes no sense.
+Python uses an **Interpreter**.
 
-3.Runtime Error: It occurs during the execution of the program.
-Example: a = 10
-         b = 0
-         c = a / b  #Runtime Error: Division by zero is not allowed.
+### How the Interpreter Works
 
-4.Indentation Error: It occurs when the code is not properly indented.
-Example: if True:  #Correct Indentation
-        .....print("Hello World")
-        if True:  #Incorrect Indentation
-        ...print("Hello World")
+* Converts code **line by line**
+* Executes each line immediately
+* Continues until the entire program finishes
 
-5.Type Error: It occurs when an operation is performed on incompatible data types.
-Example: a = 'hello'
-         b = 10
-         c = a + b  #Type Error: Cannot concatenate string and integer.
+This process is commonly done in:
 
-6.Name Error: It occurs when a variable or function is not defined.
-Example: print(x)  #Name Error: 'x' is not defined.
+* Terminal
+* Command Prompt
 
-7.Value Error: It occurs when a function receives an argument of the correct type but an inappropriate value.
-Example: int('hello')  #Value Error: Cannot convert string 'hello' to integer.
+---
 
-8.Index Error: It occurs when trying to access an index that is out of range for a list or string.
-Example: my_list = [1, 2, 3]
-         print(my_list[5])  #Index Error: List index out of range.
+## 🔵 Compiler (General Concept)
 
-9.Key Error: It occurs when trying to access a key that does not exist in a dictionary
-Example: my_dict = {'a': 1, 'b': 2}
-         print(my_dict['c'])  #Key Error: 'c' not found in dictionary.
+A **Compiler** works differently:
 
-10.Attribute Error: It occurs when trying to access an attribute that does not exist for an object.
-Example: my_list = [1, 2, 3]
-         my_list.appendd(4)  #Attribute Error: 'list' object has no attribute 'appendd'.
+* Converts the **whole program at once**
+* Then executes it
 
-11.semantic Error: It occurs when the code is syntactically correct but does not do what the programmer intended.
-Example: a = 5
-        b = 10
-        c = a - b  #Semantic Error: Programmer intended to add but subtracted instead.
+### File Extensions for Compiled Languages
 
-These are some common error types in Python. Understanding these errors can help in debugging and writing better code.
+Compiled languages usually use:
 
-#debugging: It is the process of finding and fixing errors in the code.
+```
+.c, .cpp, .java
+```
 
-Techniques for debugging:
-1.Reading code carefully (code review)
-2.Using print statements (to check variable values at every stages)
-3.Using debugging tools (like pdb, IDE debuggers)
-4.Reviewing error messages  (to understand the type and location of error)
-5.Testing code in small parts (to isolate the problem)
-6.Seeking help from others  (like online forums, colleagues)
-7.Reading documentation   (to understand how functions and libraries work)
-8.Practicing regularly   (to improve coding skills and reduce errors)
+Python files use:
 
-By using these techniques, you can effectively debug your Python code and improve your programming skills.
+```
+.py
+```
+
+Python programs can be run using tools like:
+
+* VS Code
+* PyCharm
+* Jupyter Notebook
+
+---
+
+# ❌ Errors Types in Python
+
+Errors are common while programming.
+Below are the most important error types in Python:
+
+---
+
+## 1. Syntax Error
+
+Occurs when code is not written in proper format.
+
+```python
+print("Hello World")   # Correct Syntax
+print("Hello World'    # Incorrect Syntax (missing closing quote)
+```
+
+---
+
+## 2. Logical Error
+
+Occurs when code is syntactically correct but produces incorrect results.
+
+```python
+a = "hello"
+b = 10
+c = a + b  # Logical Error: string + integer makes no sense
+```
+
+---
+
+## 3. Runtime Error
+
+Occurs during program execution.
+
+```python
+a = 10
+b = 0
+c = a / b  # Runtime Error: Division by zero is not allowed
+```
+
+---
+
+## 4. Indentation Error
+
+Occurs when code is not properly indented.
+
+```python
+if True:  # Correct indentation
+    print("Hello World")
+
+if True:  # Incorrect indentation
+print("Hello World")
+```
+
+---
+
+## 5. Type Error
+
+Occurs when an operation is performed on incompatible data types.
+
+```python
+a = "hello"
+b = 10
+c = a + b  # Type Error: Cannot concatenate string and integer
+```
+
+---
+
+## 6. Name Error
+
+Occurs when a variable or function is not defined.
+
+```python
+print(x)  # Name Error: x is not defined
+```
+
+---
+
+## 7. Value Error
+
+Occurs when the correct type is given but the value is inappropriate.
+
+```python
+int("hello")  # Value Error: Cannot convert string to integer
+```
+
+---
+
+## 8. Index Error
+
+Occurs when trying to access an index out of range.
+
+```python
+my_list = [1, 2, 3]
+print(my_list[5])  # Index Error: List index out of range
+```
+
+---
+
+## 9. Key Error
+
+Occurs when trying to access a missing key in a dictionary.
+
+```python
+my_dict = {"a": 1, "b": 2}
+print(my_dict["c"])  # Key Error: 'c' not found
+```
+
+---
+
+## 10. Attribute Error
+
+Occurs when an object does not have the attribute being accessed.
+
+```python
+my_list = [1, 2, 3]
+my_list.appendd(4)  # Attribute Error: 'list' has no attribute 'appendd'
+```
+
+---
+
+## 11. Semantic Error
+
+Occurs when code runs but does not do what the programmer intended.
+
+```python
+a = 5
+b = 10
+c = a - b  # Semantic Error: intended addition but subtracted instead
+```
+
+---
+
+These are some common error types in Python.
+Understanding them helps in debugging and writing better code.
+
+---
+
+# 🛠 Debugging in Python
+
+Debugging is the process of:
+
+✅ Finding errors
+✅ Fixing errors
+
+---
+
+## Techniques for Debugging
+
+1. Reading code carefully (**Code Review**)
+2. Using print statements (to check variable values at each stage)
+3. Using debugging tools (like `pdb`, IDE debuggers)
+4. Reviewing error messages (to understand type and location)
+5. Testing code in small parts (to isolate the problem)
+6. Seeking help from others (forums, colleagues)
+7. Reading documentation (to understand libraries and functions)
+8. Practicing regularly (to improve skills and reduce errors)
+
+---
+
+By using these techniques, you can effectively debug Python code and improve your programming skills.
+
+```
+```
