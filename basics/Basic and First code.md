@@ -252,6 +252,3 @@ Debugging is the process of:
 ---
 
 By using these techniques, you can effectively debug Python code and improve your programming skills.
-
-```
-```
